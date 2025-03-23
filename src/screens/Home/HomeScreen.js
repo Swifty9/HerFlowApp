@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to HerFlowApp! 🎉</Text>
+      <Text style={styles.title}>Welcome to HerFlow! 🎉</Text>
     </View>
   );
 };
