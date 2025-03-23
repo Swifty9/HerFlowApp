@@ -8,7 +8,7 @@ const Step2 = ({ nextStep, prevStep }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.label}>When was your last period?</Text>
-      <TextInput style={styles.input} value={lastPeriod} onChangeText={setLastPeriod} placeholder="YYYY-MM-DD" />
+      <TextInput style={styles.input} value={lastPeriod} onChangeText={setLastPeriod} placeholder="DD-MM-YYYY" />
 
       <Text style={styles.label}>Average cycle length (in days)</Text>
       <TextInput style={styles.input} value={cycleLength} onChangeText={setCycleLength} keyboardType="numeric" />
