@@ -1,10 +1,20 @@
-const savePreferences = async (preferences) => {
+// to save user preferencee
+export const saveUserPreferences = async (preferences) => {
     try {
-      const jsonValue = JSON.stringify(preferences);
-      await AsyncStorage.setItem('userPreferences', jsonValue);
-      console.log('Preferences saved!');
+      await AsyncStorage.setItem('userPreferences', JSON.stringify(preferences));
     } catch (error) {
       console.error('Error saving preferences:', error);
+    }
+  };
+  
+// load user preference from local storage
+  export const getUserPreferences = async () => {
+    try {
+      const preferences = await AsyncStorage.getItem('userPreferences');
+      return preferences ? JSON.parse(preferences) : null;
+    } catch (error) {
+      console.error('Error loading preferences:', error);
+      return null;
     }
   };
   

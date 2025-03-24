@@ -23,7 +23,7 @@ const ChatScreen = () => {
 
         setInput('');
     };
-
+   
     return (
         <View style={{ flex: 1, padding: 20 }}>
             <ScrollView>
